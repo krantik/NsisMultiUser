@@ -34,7 +34,7 @@ Var StartMenuFolder
 ; Installer Attributes
 Name "${PRODUCT_NAME} ${VERSION} ${PLATFORM}"
 OutFile "Setup_MUI_1_2_Full.exe"
-BrandingText "©2017 ${COMPANY_NAME}"
+BrandingText "Â©2017 ${COMPANY_NAME}"
 
 AllowSkipFiles off
 SetOverwrite on ; (default setting) set to on except for where it is manually switched off
@@ -190,7 +190,7 @@ Section "Program Group" SectionProgramGroup
   !insertmacro MUI_STARTMENU_WRITE_END	
 SectionEnd
 
-Section "Dektop Icon" SectionDesktopIcon
+Section "Desktop Icon" SectionDesktopIcon
 	SectionIn 1 3
 
 	CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\${PROGEXE}"	
